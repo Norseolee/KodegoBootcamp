@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISCP Employee Registration Form</title>
+    <style>
+      label,
+      input {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+      label {
+        width: 220px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/d/d4/ISCP_Logo.png"
+      width="300px" /><br />
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/aCUhfPAyDHY"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <h2>Basic information</h2>
+    <label for="first_name">First name:</label>
+    <input
+      type="text"
+      id="first_name"
+      name="first_name"
+      placeholder="ex. Juan"
+      required /><br />
+    <label for="last_name">Last name:</label>
+    <input
+      type="text"
+      id="last_name"
+      name="first_name"
+      placeholder="dela Cruz"
+      required /><br />
+    <label for="place_of_birth">Place of Birth:</label>
+    <input
+      type="text"
+      id="place_of_birth"
+      name="place_of_birth"
+      placeholder="Imus City" /><br />
+    <label for="birthdate">Date of Birth:</label>
+    <input type="date" id="birthdate" name="birthdate" /><br />
+    <label for="civil_status">Civil Status:</label>
+    <input type="radio" name="civil_status" value="single" />single
+    <input type="radio" name="civil_status" value="married" />married
+    <input type="radio" name="civil_status" value="widowed" />widowed
+    <input type="radio" name="civil_status" value="separated" />seperated<br />
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" value="female" />female
+    <input type="radio" name="gender" value="male" />male
+    <input type="radio" name="gender" value="other" />others
+    <br />
+    <label for="mothers_maiden_name">Mother's Maiden Name:</label>
+    <input
+      type="text"
+      id="mothers_maiden_name"
+      name="mothers_maiden_name"
+      style="width: 200px"
+      required /><br />
+    <label for="fathers_name">Father's Name:</label>
+    <input
+      type="text"
+      id="fathers_name"
+      name="fathers_name"
+      style="width: 200px"
+      required />
+    <h2>Contact information</h2>
+    <label for="email">Email Address:</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="juandelacruz@yahoo.com"
+      required /><br />
+    <label for="contact_number_mob">Contact Number(Mobile):</label>
+    <input
+      type="number"
+      id="contact_number"
+      name="contact_number"
+      placeholder="ex. 09971234567"
+      required /><br />
+    <label for="contact_number_tel">Contact Number(Telephone)</label>
+    <input
+      type="mobile"
+      id="contact_number"
+      name="contact_number"
+      placeholder="ex. 0463351321"
+      required />
+    <h2>Address</h2>
+    <br />
+    <label for="street_number">Street number:</label>
+    <input type="number" id="street_number" name="street_number" /><br />
+    <label for="street_name">Street name:</label>
+    <input type="text" id="street_name" name="street_number" /><br />
+    <label for="barangay">Barangay</label>
+    <input type="text" id="barangay" name="barangay" /><br />
+    <label for="City/Town">City/Town:</label>
+    <input type="text" id="city/town" name="city/town" /><br />
+    <label for="province">Province</label>
+    <input type="text" id="province" name="province" /><br />
+    <label for="full_address">Full address</label>
+    <input
+      type="text"
+      id="ful_address"
+      name="full_address"
+      style="width: 200px" />
+    <h2>Government</h2>
+    <label for="sss_id">SSS ID:</label>
+    <input type="text" id="sss_id" name="sss_id" /><br />
+    <label for="pag-ibig_id">Pag-ibig ID:</label>
+    <input type="text" id="pag-ibig_id" name="pag-ibig_id" /><br />
+    <label for="philhealth_id">PhilHealth ID:</label>
+    <input type="text" id="philhealth_id" name="philhealth_id" /><br />
+    <label for="upload_pic">Upload 2x2 picture</label>
+    <input type="file" name="upload_pic" accpet="images/*" /><br />
+    <label for="upload_gov_id">Upload picture of government ID</label>
+    <input type="file" name="upload_gov_id" accept="images/*" />
+    <h2>Accound information</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required /><br />
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required /><br />
+    <label for="con_password">Confirm Password:</label>
+    <input
+      type="password"
+      id="con_password"
+      name="con_password"
+      requried /><br />
+    <label for="upload_pro_img">Upload profile image</label>
+    <input type="file" name="upload_pro_img" accept="images/*" />
+    <h2>Have you experienced any of the following in the last 30 days?</h2>
+    <input type="checkbox" name="cough" /> Coughing
+    <br />
+    <input type="checkbox" name="fever" /> Fever
+    <br />
+    <input type="checkbox" name="headache" /> Headache
+    <br />
+    <input type="checkbox" name="common_cold" /> Common Cold
+    <br />
+    <input type="checkbox" name="body_ache" /> Body Ache
+    <br />
+    <input type="checkbox" name="sore_throat" /> Sore Throat
+    <br />
+    <input type="checkbox" name="tiredness" /> Tiredness
+    <br />
+    <input type="checkbox" name="loss_of_smell" /> Loss of smell
+    <br />
+    <h2>Give a short description about yourself</h2>
+    <textarea
+      name="give_a_short_des_bout_urself"
+      placeholder="Short description about yourself"
+      style="width: 400px"
+      rows="10"></textarea>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.blue_bg {
+  background-color: rgb(70, 130, 180);
+}
+
+.initialize {
+  margin: 0px;
+}
+
+.blue_color {
+  color: rgb(70, 130, 180);
+}
+
+.pink_color {
+  color: rgb(255, 0, 216);
+}
+
+.inside {
+  list-style-position: inside;
+}
+
+.gray_color {
+  color: rgb(160, 160, 160);
+}

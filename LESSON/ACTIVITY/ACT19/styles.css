@@ -1,0 +1,96 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body {
+  font-family: Comic Sans MS;
+}
+
+table {
+  width: 100%;
+}
+
+h1 {
+  color: rgb(70, 130, 180);
+  margin-top: 0%;
+}
+
+ul {
+  margin-top: 1px;
+  text-align: center;
+  list-style-position: inside;
+  font-size: 110%;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: rgb(160, 160, 160);
+  font-size: 50%;
+}
+
+#navigation {
+  padding: 10px 30px 10px 200px;
+  color: white;
+  background-color: rgb(70, 130, 189);
+}
+
+#content_top {
+  text-align: center;
+}
+
+#ministries {
+  margin-top: 0%;
+  margin-bottom: 1%;
+  font-size: 300%;
+  color: rgb(70, 130, 180);
+}
+
+#hparagraph {
+  margin-left: 30px;
+}
+
+#bparagraph {
+  font-size: 150%;
+}
+
+#pink_color {
+  color: rgb(255, 0, 216);
+}
+
+#cross_left {
+  margin-top: 30px;
+  margin-right: 200px;
+}
+
+#cross_right {
+  margin-top: 30px;
+  margin-left: 200px;
+}
+
+#center {
+  text-align: center;
+}
+
+#hministries {
+  margin-bottom: 0%;
+  margin-top: 30px;
+}
+
+.margin_bottom {
+  margin-bottom: 0%;
+}
+
+#margin_top {
+  margin-top: 0%;
+}
+
+#margin_bottom {
+  margin-bottom: 0%;
+}
+
+.gray_color {
+  color: rgb(160, 160, 160);
+}
