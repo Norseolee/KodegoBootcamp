@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap collapse</title>
+  </head>
+  <body>
+    <h1>Collapse</h1>
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#para"
+      >Click me!</a
+    >
+    <div class="collapse" id="para"><p>I do saranghar helooo</p></div>
+    <div class="collapse" id="para">
+      <p>
+        I do saranghar agkjas aksdflaks asfkljlasd loreLorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Quis quos voluptatum odit temporibus
+        illo fuga ex et nemo. Vel exercitationem eos vitae recusandae autem ex
+        iusto laudantium iste quae similique. m
+      </p>
+    </div>
+    <h1>Accordion</h1>
+    <div class="accordion">
+      <div class="accordion-item" id="faq">
+        <button
+          class="accordion-button"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#question1">
+          <h2>when are you open?</h2>
+        </button>
+        <div
+          id="question1"
+          class="accordion-collapse collapse"
+          data-bs-parent="#faq">
+          <div class="acordion-body">We are open from 9am to 5 pm everyday</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

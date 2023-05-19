@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Boostrap good stuff 2</title>
+    <style>
+      /* MEDIA QUEERRY  */
+      @media only screen and (max-width: 500px) {
+        body {
+          background-color: aquamarine;
+        }
+        img {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="images/background.jpg" />
+    <!-- 
+        FIX -->
+    <nav id="navbar-ub" class="navbar navbar-light fixed-top bg-light">
+      <a class="navbar-brand" href="#">UB</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#heading-offcanvas">offcanvas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#heading-progressbar">progressbar</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- 
+
+        FOR LINK INSIDE THE ONE PAGE
+     -->
+    <p><a href="#heading-offcanvas">got to off canvas</a></p>
+
+    <!-- 
+
+        DYNAMIC TABBS -->
+    <div class="container">
+      <h1>Tabs</h1>
+      <!-- to make vertical  make head div and col-lg-2 and add in ul flex-column -->
+      <ul class="nav nav-tabs" id="mytabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <!-- TABS HEADING -->
+          <button
+            class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#history-tab"
+            type="button"
+            role="tab">
+            History
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#vision-tab"
+            type="button"
+            role="tab">
+            Vision
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#mission-tab"
+            type="button"
+            role="tab">
+            Mission
+          </button>
+        </li>
+      </ul>
+      <!-- TABS CONTENT -->
+      <div class="tab-content" id="my-tab-content">
+        <div class="tab-pane fade show active" id="history-tab" role="tabpanel">
+          HISTORY Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Repellat aperiam maiores dolores velit atque pariatur cum nisi
+          laudantium eos. Optio, consequatur repellat. Doloribus, possimus
+          quibusdam accusantium facere esse culpa laudantium?
+        </div>
+        <div class="tab-pane fade show" id="vision-tab" role="tabpanel">
+          VISION Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Repellat aperiam maiores dolores velit atque pariatur cum nisi
+          laudantium eos. Optio, consequatur repellat. Doloribus, possimus
+          quibusdam accusantium facere esse culpa laudantium?
+        </div>
+        <div class="tab-pane fade show" id="mission-tab" role="tabpanel">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-lg-6">
+                MISSION Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Repellat aperiam maiores dolores velit atque pariatur cum
+                nisi laudantium eos. Optio, consequatur repellat. Doloribus,
+                possimus quibusdam accusantium facere esse culpa laudantium?
+              </div>
+              <div class="col-lg-6">
+                <img
+                  src="images/portfolio.jpg"
+                  id="vision-tab"
+                  role="tabpanel" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+        OFF CANVAS use in bootstrap 5.0.0 not working in 5.2.0 -->
+    <h1 id="heading-offcanvas">Offcanvas</h1>
+    <!-- if you want to scroll without closing and dim the main page use
+    
+    data-bs-scroll="true" to make it scroll
+data-bs-backdrop="false" to make it not dim main page-->
+    <a
+      class="btn btn-primary"
+      data-bs-toggle="offcanvas"
+      href="#sidebar"
+      role="button">
+      OPEN SIDE BAR
+    </a>
+    <!-- 
+        to make it left or right off canvas is to change offcanvas-end to offcanvas-start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title">University of Baguio</h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="card">
+          <img src="class.jpg" class="card-img-top img-fluid" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Careers</li>
+        </ul>
+      </div>
+    </div>
+    <!-- 
+
+     -->
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <!--
+        PROGRESS BAR  -->
+    <h1 id="heading-progressbar">PROGRESS BAR</h1>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width: 18%"></div>
+    </div>
+  </body>
+</html>

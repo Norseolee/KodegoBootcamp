@@ -1,0 +1,20 @@
+.left_nav {
+  justify-content: end;
+}
+
+#bgcolor {
+  background-color: rgb(248, 246, 244);
+}
+
+.navcolorbg {
+  background-color: rgb(227, 244, 244);
+}
+
+.navlogo {
+  padding-bottom: 10px;
+}
+
+.navline:hover {
+  text-decoration: underline;
+  color: grey;
+}

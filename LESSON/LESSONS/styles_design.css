@@ -1,0 +1,75 @@
+a:hover {
+  color: green;
+}
+
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+a:visited {
+  color: maroon;
+}
+
+a:active {
+  color: lime;
+}
+
+a {
+  background-color: greenyellow;
+  padding: 10px;
+}
+ul {
+  list-style-image: url(images/small\ sunflower.png);
+}
+
+body {
+  font-family: Arial;
+  margin: 0px 40px 0px 40px;
+}
+h1 {
+  background-color: aquamarine;
+}
+p {
+  margin-left: 30px;
+}
+
+#myname {
+  color: greenyellow;
+  font-size: 120%;
+}
+
+#ages {
+  color: red;
+}
+
+#sunflower {
+  opacity: 0.5;
+  width: 100px;
+}
+
+#my_picture {
+  width: 200px;
+  clip-path: circle(50%);
+}
+
+#my_picture:hover {
+  width: 300px;
+  height: 300px;
+}
+
+table,
+th,
+td {
+  border-bottom: 2px solid pink;
+  border-collapse: collapse;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+tr:hover {
+  background-color: teal;
+}

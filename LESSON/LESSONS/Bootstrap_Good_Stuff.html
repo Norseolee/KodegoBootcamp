@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Bootstrap Good Stuff</title>
+  </head>
+  <style>
+    .nav-item:hover {
+      background-color: rgb(255, 201, 22);
+    }
+    .carousel .carousel-indicators button {
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+    }
+  </style>
+  <body>
+    <!-- DROP DOWN -->
+    <h1>DROP DOWN</h1>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdown-button"
+        data-bs-toggle="dropdown">
+        Select room
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+
+    <!-- different of button and input type button is button is for button and input button type is when you transmeting information like user information email and password -->
+    <h1>Modal</h1>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#check-in">
+      check in
+    </button>
+    <div class="modal fade" id="check-in" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="check-in-title">
+              Confirm Check in
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"></button>
+            </h5>
+          </div>
+          <!-- we can use grid with modal-body to create container -->
+          <div class="modal-body">
+            <h5>Economy Gold</h5>
+            <ul>
+              <li>Air conditioning</li>
+              <li>Wi-fi</li>
+              <li>Elevator</li>
+            </ul>
+            <p>Booking an economy room for 3k per night. Confirm Booking?</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="collapse"
+              data-bs-target="#check-in">
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#success-checkin">
+              <!-- para mag close dagdag mo data-bs-dismess -->
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="success-checkin" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="Modal-content">
+          <div class="model-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">Booking confirm!</div>
+        </div>
+      </div>
+    </div>
+
+    <h1>CAROUSEL</h1>
+    <div class="container-fluid">
+      <!-- CONTAINER CAROUSEL -->
+      <div
+        id="Hotel-pics"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3500">
+        <!-- INDICATOR FOR CAROUSEL -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#hotel-pics"
+            data-bs-slide-to="0"
+            class="active"></button>
+          <button
+            type="button"
+            data-bs-target="#hotel-pics"
+            data-bs-slide-to="1"></button>
+        </div>
+        <!--  THIS IS THE INSIDE OF CAROUSEL -->
+        <div class="carousel-inner">
+          <!-- active is the first thing to pop up in carousel -->
+          <div class="carousel-item active">
+            <img
+              src="images/airplane.webp"
+              class="d-block w-100"
+              alt="airplane" />
+            <!-- THIS IS THE CAPTION -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Airplane</h5>
+              <p>Playing in the air</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/boat.jfif" class="d-block w-100" alt="boat" />
+            <!-- THIS IS THE CAPTION -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>boat</h5>
+              <p>travling in the sea</p>
+            </div>
+          </div>
+          <!-- THIS IS THE BUTTON OF PREVIOUS AND NEXT -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#hotel-pics"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#hotel-pics"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="burger.css" />
+    <title>Bear Burger's - Order.</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/161/161588.png"
+            width="30px"
+            class="navlogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarcontent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarcontent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="../home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="burgers_order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Shop</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="search" />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- SECTION -->
+    <div class="container">
+      <div class="row">
+        <h1 class="display-1" id="ordersection">Order Here!</h1>
+        <div class="col-lg-8">
+          <table class="table">
+            <!-- HEAD TABLE -->
+            <thead>
+              <tr id="table_head">
+                <th>Icons</th>
+                <th id="short_table">Item Name</th>
+                <th>Price</th>
+              </tr>
+              <tr>
+                <!-- SUB HEAD TABLE -->
+                <th id="table_subhead" class="text-center" colspan="3">
+                  Meals
+                </th>
+              </tr>
+            </thead>
+            <!-- BODY TABLE -->
+            <div>
+              <tbody class="select">
+                <tr>
+                  <td id="img">
+                    <img src="images/burger.png" width="50px" />
+                  </td>
+                  <td>Burger</td>
+                  <td>₱55.00</td>
+                </tr>
+                <tr>
+                  <td id="img">
+                    <img
+                      src="images/friedchicken.png"
+                      width="50px"
+                      class="img" />
+                  </td>
+                  <td>Fried chicken</td>
+                  <td>₱55.00</td>
+                </tr>
+                <tr>
+                  <td id="img">
+                    <img src="images/spaghetti.png" width="50px" class="img" />
+                  </td>
+                  <td>Spaghetti</td>
+                  <td>₱55.00</td>
+                </tr>
+                <tr>
+                  <td id="img">
+                    <img src="images/pizza.png" width="45px" class="img" />
+                  </td>
+                  <td>Pizza</td>
+                  <td>₱150.00</td>
+                </tr>
+              </tbody>
+              <thead>
+                <tr>
+                  <th
+                    style="background-color: rgb(255, 229, 182)"
+                    class="text-center"
+                    colspan="3">
+                    Drinks
+                  </th>
+                </tr>
+              </thead>
+              <tbody lass="select">
+                <tr>
+                  <td id="img">
+                    <img src="images/Coke.png" width="25px" class="img" />
+                  </td>
+                  <td>Coke</td>
+                  <td>₱20.00</td>
+                </tr>
+                <tr>
+                  <td id="img">
+                    <img src="images/sprite.png" width="25px" class="img" />
+                  </td>
+                  <td>Sprite</td>
+                  <td>₱20.00</td>
+                </tr>
+                <tr>
+                  <td id="img">
+                    <img src="images/Sarsi.png" width="50px" class="img" />
+                  </td>
+                  <td>Sarsi</td>
+                  <td>₱20.00</td>
+                </tr>
+                <tr>
+                  <td
+                    rowspan="2"
+                    colspan="2"
+                    style="background-color: rgb(250, 238, 216)">
+                    All items are subject to tax. No refunds. All items not
+                    transferable.
+                  </td>
+                  <td>Extra rice - ₱20.00</td>
+                </tr>
+                <tr>
+                  <td>Condiments - ₱20.00</td>
+                </tr>
+              </tbody>
+            </div>
+          </table>
+        </div>
+        <!-- BASIL SPOON -->
+        <div class="col-lg-1">
+          <img src="images/basil-sauce.png" width="350px" />
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div class="container:fluid footerbackground mt-5">
+      <!-- HEAD FOOTER -->
+      <div class="row">
+        <p class="display-2 text-white marginfooter">Tell Us What You Think!</p>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <!-- BURGER VERTICAL -->
+        <div class="col-lg-5">
+          <img src="images/burger-vertical-ingredient.jpg" width="400PX" />
+        </div>
+        <!-- FORMS -->
+        <forms class="col-lg-5 text-white">
+          <!-- NAME -->
+          <div class="form-group">
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" class="form-control" />
+          </div>
+          <!-- PROVINCE -->
+          <div class="form-group mb-4">
+            <label for="province">Province (Optional): </label>
+            <input type="text" id="province" class="form-control" />
+          </div>
+          <!-- MUTLIPLE CHOICE 1 -->
+          <div class="form-group mb-4">
+            <span id="many_times">
+              How many times have you went to our restaurant?
+            </span>
+            <div>
+              <input type="radio" name="many_times" value="firsttime" />
+              This is the first time!
+            </div>
+            <div>
+              <input type="radio" name="many_times" value="second_time" />
+              Second time
+            </div>
+            <div>
+              <input type="radio" name="many_times" value-="third_more" />Third
+              time or more
+            </div>
+          </div>
+          <!-- MULTIPLE CHOICE 2 -->
+          <div class="form-group mb-4">
+            <span id="went"
+              >How many times have you went to our restaurant?</span
+            >
+            <div>
+              <input type="radio" name="went" value="1" /> ⭐
+              <input type="radio" name="went" value="2" /> ⭐⭐
+              <input type="radio" name="went" value="3" /> ⭐⭐⭐
+              <input type="radio" name="went" value="4" /> ⭐⭐⭐⭐
+              <input type="radio" name="went" value="5" /> ⭐⭐⭐⭐⭐
+            </div>
+          </div>
+          <!-- MULTIPLE CHOICE # -->
+          <div class="form-group mb-4">
+            <span id="rate">How would you rate the services?</span>
+            <div>
+              <input type="radio" name="rate" value="rate_1" />⭐
+              <input type="radio" name="rate" value="rate_2" /> ⭐⭐
+              <input type="radio" name="rate" value="rate_3" /> ⭐⭐⭐
+              <input type="radio" name="rate" value="rate_4" /> ⭐⭐⭐⭐
+              <input type="radio" name="rate" value="rate_5" /> ⭐⭐⭐⭐⭐
+            </div>
+          </div>
+          <!-- SUBMIT -->
+          <input type="submit" class="btn btn-primary" value="Submit" />
+        </forms>
+      </div>
+    </div>
+    <footer class="container:fluid my-5">
+      <div class="row text-center">
+        <div>
+          <p class="col-lg-12">hajarguiamatgabuya@yahoo.com</p>
+          <p class="col-lg-12">09974552121</p>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/facebook.jpg" width="30px"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.jpg" width="30px"
+          /></a>
+          <a href="https://twitter.com/norseoleechoi" target="_blank">
+            <img src="images/twitter.jpg" width="30px"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
