@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>figthing</title>
+  </head>
+  <script>
+    let w_max_hp = 200;
+    let s_max_hp = 300;
+    let w_hp = w_max_hp;
+    let s_hp = s_max_hp;
+    let w_atttack_dmg = 30;
+    let w_fireball_dmg = 30;
+    let w_counter_dmg = 80;
+    let w_light_dmg = 15;
+    let w_heavy_dmg = 30;
+    let special_interaction = false;
+    let s_move;
+
+    function rng_skeleton() {
+      let rng = Math.random();
+
+      if (rng < 0.25) {
+        s_move = "light";
+      } else if (rng < 0.5) {
+        s_move = "heavy";
+      } else if (rng < 0.75) {
+        s_move = "block";
+      } else {
+        s_move = "magic";
+      }
+    }
+
+    function skeleton_move() {
+      if (s_move == "light") {
+        console.log("The Skeleton strikes with its mace!");
+        w_hp -= w_light_dmg;
+      } else if (s_move == "heavy") {
+        console.log("The Skeleton King cleaves with its mace!");
+        w_hp -= w_heavy_dmg;
+      } else if (s_move == "block") {
+        console.log("The Skeleton King raises its shield of bones!");
+      } else if (s_move == "magic") {
+        console.log("The skeleton king cast a magic to self");
+      }
+    }
+
+    function warrior_attack() {
+      rng_skeleton();
+      if (s_move == "block") {
+        console.log("The Skeleton king blocked your attack!");
+        special_interaction == true;
+      } else {
+        console.log("You swung your sword at the Skeleton King!");
+        s_hp -= w_atttack_dmg;
+      }
+      do_turn();
+    }
+    function warrior_block() {
+      rng_skeleton();
+      if (s_move == "light") {
+        console.log("You blocked the Skeleton blow!");
+        special_interaction == true;
+      } else {
+        console.log("You raised your shield!");
+      }
+      do_turn();
+    }
+
+    function warrior_counter() {
+      rng_skeleton();
+      if (s_move == "heavy") {
+        console.log(
+          "You dodge the Skeleton king's attack and got a critical hit!"
+        );
+        s_hp -= w_counter_dmg;
+        special_interaction == true;
+      }
+      console.log("Your attempted to coutner!");
+      do_turn();
+    }
+
+    function warrior_fireball() {
+      rng_skeleton();
+      if (s_move == "magic") {
+        console.log(
+          "The Skelton King absored the fireball with its magic shield!"
+        );
+        if (s_max_hp - s_hp > w_fireball_dmg) {
+          s_hp += w_fireball_dmg;
+          special_interaction == true;
+        } else {
+          s_hp = s_max_hp;
+        }
+      } else if (s_move == "block") {
+        console.log(
+          "The Skeleton King take's shield the fire ball, and it takes more damage!"
+        );
+        s_hp -= w_fireball_dmg * 2;
+        special_interaction == true;
+      } else {
+        console.log("Your shot a fireball at the Skeleton King!");
+        s_hp -= w_fireball_dmg;
+      }
+      do_turn();
+    }
+
+    function do_turn() {
+      if (s_hp <= 0) {
+        console.log("THe Skeleton King has been fallen!");
+        console.log("You have defeated the Skeleton king!");
+        special_interaction == true;
+      }
+      if (special_interaction == false) {
+        skeleton_move();
+      }
+      special_interaction == false;
+      show_stats();
+      if (w_hp <= 0) {
+        console.log("The warrior has been fallen");
+        console.log("NUMMMMBBB!!");
+      }
+    }
+
+    function show_stats() {
+      console.log("Warrior's HP " + w_hp + "/" + w_max_hp);
+      console.log("Skeleton's HP " + s_hp + "/" + s_max_hp);
+      console.log("-----------------------------------");
+    }
+
+    show_stats();
+  </script>
+
+  <body>
+    <body>
+      <h1>Fight the SKeleton King!</h1>
+      <img src="../images/skull king.jpg" style="width: 50%" />
+      <div>
+        <button onclick="warrior_attack()">attack</button>
+        <button onclick="warrior_block()">block</button>
+        <button onclick="warrior_counter()">counter</button>
+        <button onclick="warrior_fireball()">fireball</button>
+      </div>
+    </body>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with the Alphabet</title>
+    <script>
+      /* THIS PROGRAM DOES THE  FOLLOWING:
+        1. COUNT THE TOTAL VOWELS INPUT BY USER.
+        2. COUNT THE TOTAL CONSONANT INPUT BY USER.
+        2. IT WILL NOT COUNT SYMBOL AND NUMBER.
+
+    AUTHOR BY NORHAJAR GABUYA */
+      function countVowel() {
+        // INPUT WORD
+        let word = prompt("Enter a word: ");
+        if (word.trim() === "") {
+          console.error("Invalid Input. Please enter a word!");
+          return;
+        }
+
+        let vowelCount = countvowelword(word);
+        let consonantCount = countconsonantword(word);
+
+        console.log("Number of vowels: " + vowelCount);
+        console.log("Number of consonants: " + consonantCount);
+      }
+      // FUNCTION FOR VOWELS
+      function countvowelword(word) {
+        let count = 0;
+        let vowels = ["a", "e", "i", "o", "u"];
+
+        for (let i = 0; i < word.length; i++) {
+          let char = word.charAt(i).toLowerCase();
+          if (vowels.includes(char)) {
+            count++;
+          }
+        }
+
+        return count;
+      }
+      // FUNCTION FOR CONSONANTS
+      function countconsonantword(word) {
+        let count = 0;
+        let consonants = [
+          "b",
+          "c",
+          "d",
+          "f",
+          "g",
+          "h",
+          "j",
+          "k",
+          "l",
+          "m",
+          "n",
+          "p",
+          "q",
+          "r",
+          "s",
+          "t",
+          "v",
+          "w",
+          "x",
+          "y",
+          "z",
+        ];
+
+        for (let i = 0; i < word.length; i++) {
+          let char = word.charAt(i).toLowerCase();
+          if (consonants.includes(char)) {
+            count++;
+          }
+        }
+
+        return count;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Vowel Counter</h1>
+    <button onclick="countVowel()">Enter Vowel</button>
+  </body>
+</html>
