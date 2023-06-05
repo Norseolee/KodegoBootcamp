@@ -1,25 +1,19 @@
-function runActivity() {
-  const suspects = [
-    "Alfred",
-    "Bonnie",
-    "Craig",
-    "Danny",
-    "Eric",
-    "Flint",
-    "Gayle",
-    "Heidi",
-    "Isabel",
-    "Jacobs",
+function run() {
+  let animals = [
+    { dog: "canis lupus familiarisis" },
+    { cat: "felis catus" },
+    { rat: "rattus norvegicus" },
   ];
-  const wanted = ["Alfred", "Danny", "Jacobs"];
 
-  for (let i = 0; i < suspects.length; i++) {
-    console.log("Checking wanted list for " + suspects[i] + "...");
-    for (let j = 0; j < wanted.length; j++) {
-      if (suspects[i] == wanted[j]) {
-        console.log("Suspect is wanted!");
-        break;
-      }
+  let choice = prompt("What animal?");
+  for (let i = 0; i < animals.length; i++) {
+    let animal = animals[i];
+
+    if (choice === Object.keys(animal)[0]) {
+      console.log(
+        Object.keys(animal)[0] + ": " + animal[Object.keys(animal)[0]]
+      );
+      break;
     }
   }
 }
